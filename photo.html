@@ -2,8 +2,115 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="main-header">
+      <div class="logo">
+        <img src="http://placehold.it/150x100" alt="logo">
+      </div>
+      <div class="menu">
+        <ul class="menu__item">
+          <li class="menu__items"><a href="index.html">Главная</a></li>
+          <li class="menu__items"><a href="#">Фотографии</a></li>
+          <li class="menu__items"><a href="form.html ">Конкурс</a></li>
+          <li class="menu__items"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+        <button type="button" name="button"></button>
+      </div>
+    </header>
+    <main>
+      <div class="main main-wrapper">
+        <div class="main__user-photos">
+          <h2>Фотографии пользователей</h2>
+          <div class="main__background-top">
+            <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          </div>
+        </div>
+        <div class="main__comments">
+          <ul>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <span class="main__panorama">ПАНОРАМА ДНЯ</span>
+              <b class="main__name">Анна</b>
+              <span class="main__time">(5 минут назад)</span>
+              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="main__like">Нравится: 215</p>
+            </li>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <b class="main__name">Левон</b>
+              <span class="main__time">(5 часов назад)</span>
+              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="main__like">Нравится: 356</p>
+            </li>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <b class="main__name">Антон</b>
+              <span class="main__time">(12 часов назад)</span>
+              <p>Соседи будут рады!</p>
+              <p class="main__like">Нравится: 666</p>
+            </li>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <b class="main__name">Борис</b>
+              <span class="main__time">(20 часов назад)</span>
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="main__like">Нравится: 215</p>
+            </li>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <b class="main__name">Сергей</b>
+              <span class="main__time">(25 часов назад)</span>
+              <p>Самая кубанская в мире!</p>
+              <p class="main__like">Нравится: 4</p>
+            </li>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <b class="main__name">Максим</b>
+              <span class="main__time">(40 часов назад)</span>
+              <p>Где снег-то?</p>
+              <p class="main__like">Нравится: 150</p>
+            </li>
+            <li class="main_comment">
+              <img src="http://placehold.it/150x100" alt="">
+              <b class="main__name">Надежда</b>
+              <span class="main__time">(45 часов назад)</span>
+              <p>Всем GM и взаимные лайки!</p>
+              <p class="main__like">Нравится: 2560</p>
+            </li>
+          </ul>
+        </div>
+        <div class="main__upload">
+          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+            <img src="http://placehold.it/150x100" alt="">
+            <input type="radio" name="radio" id="definition" checked>
+            <input type="radio" name="radio" id="palette">
+            <input type="radio" name="radio" id="shadow">
+            <input type="range" min="1" max="10" name="range" id="definition">
+            <input type="range" min="1" max="10" name="range" id="palette" class="hidden">
+            <input type="range" min="1" max="10" name="range" id="shadow" class="hidden">
+            <input type="button" name="post" value="Запостить">
+            <input type="button" name="cansel" value="Отмена" disabled>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="index.html"></a>
+      </div>
+      <div class="footer__social-btn">
+        <a href="https://twitter.com/login?lang=ru"></a>
+        <a href="https://ru-ru.facebook.com/"></a>
+        <a href="https://www.youtube.com/"></a>
+      </div>
+      <div class="footer__html-acadymy">
+        <p>Разработано<a href="https://htmlacademy.ru/"></a></p>
+      </div>
+    </footer>
   </body>
 </html>
