@@ -22,20 +22,22 @@
       </div>
     </header>
     <main>
-      <div class="form__wrapper">
+      <div class="form">
         <div class="form form--background-top">
           <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
         <div class="form">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="surname">Фамилия:</label>
-            <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
-            <label for="name">Имя:</label>
-            <input type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
-            <label for="patronymic">Отчество:</label>
-            <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
-            <div class="form form--background">
+            <fieldset>
+              <label for="surname">Фамилия:</label>
+              <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
+              <label for="name">Имя:</label>
+              <input type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
+              <label for="patronymic">Отчество:</label>
+              <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
+            </fieldset>
+            <fieldset class="form form--background">
               <p>Ваши безбашенные достижения в путешествии</p>
               <input type="checkbox" name="checkbox" id="checkbox-1" checked>
               <label for="checkbox-1">Сделал селфи с акулой</label>
@@ -49,12 +51,14 @@
               <label for="checkbox-5">Удержал башню</label>
               <input type="checkbox" name="checkbox" id="checkbox-6">
               <label for="checkbox-6">Разгромил отель</label>
-            </div>
-            <label for="tel">Номер телефона</label>
-            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-            <label for="email">адрес почты</label>
-            <input type="email" name="email" id="email" placeholder="Введите почту *" required>
-            <div class="form form--background">
+            </fieldset>
+            <fieldset>
+              <label for="tel">Номер телефона</label>
+              <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              <label for="email">адрес почты</label>
+              <input type="email" name="email" id="email" placeholder="Введите почту *" required>
+            </fieldset>
+            <fieldset class="form form--background">
               <p>С каким приложением путешествовали?</p>
               <input type="radio" name="radio" id="radio-1" checked>
               <label for="radio-1">Pink для iOS</label>
@@ -62,10 +66,12 @@
               <label for="radio-2">Pink на Android</label>
               <input type="radio" name="radio" id="radio-3">
               <label for="radio-3">Windows Phone</label>
-            </div>
-            <p>Опишите свои эмоции</p>
-            <textarea name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            <input type="submit" name="submit" value="Отправить форму">
+            </fieldset>
+            <fieldset>
+              <p>Опишите свои эмоции</p>
+              <textarea name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <input type="submit" name="submit" value="Отправить форму">
+            </fieldset>
           </form>
           <p><span>*</span>— обязательные поля</p>
         </div>
