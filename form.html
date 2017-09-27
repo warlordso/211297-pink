@@ -22,13 +22,13 @@
       </div>
     </header>
     <main>
-      <div class="form">
-        <div class="form form--background-top">
+      <div class="competition">
+        <div class="competition background-top">
           <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
-        <div class="form__about-me">
+        <div class="competition__about-me">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <label for="surname">Фамилия:</label>
               <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
@@ -38,7 +38,7 @@
               <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
             </fieldset>
             <fieldset class="form form--background">
-              <p>Ваши безбашенные достижения в путешествии</p>
+              <legend>Ваши безбашенные достижения в путешествии</legend>
               <input type="checkbox" name="checkbox" id="checkbox-1" checked>
               <label for="checkbox-1">Сделал селфи с акулой</label>
               <input type="checkbox" name="checkbox" id="checkbox-2" checked>
@@ -59,7 +59,7 @@
               <input type="email" name="email" id="email" placeholder="Введите почту *" required>
             </fieldset>
             <fieldset class="form form--background">
-              <p>С каким приложением путешествовали?</p>
+              <legend>С каким приложением путешествовали?</legend>
               <input type="radio" name="radio" id="radio-1" checked>
               <label for="radio-1">Pink для iOS</label>
               <input type="radio" name="radio" id="radio-2">
@@ -68,7 +68,7 @@
               <label for="radio-3">Windows Phone</label>
             </fieldset>
             <fieldset>
-              <p>Опишите свои эмоции</p>
+              <legend>Опишите свои эмоции</legend>
               <textarea name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <input type="submit" name="submit" value="Отправить форму">
             </fieldset>
