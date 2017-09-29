@@ -8,33 +8,35 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-        <img src="http://placehold.it/150x100" alt="logo">
-      </div>
-      <div class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="index.html" class="menu__drop-down">Главная</a></li>
-          <li class="menu__item"><a href="photo.html" class="menu__drop-down">Фотографии</a></li>
-          <li class="menu__item"><a href="#" class="menu__drop-down">Конкурс</a></li>
-          <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
-        </ul>
-        <button type="button" name="button"></button>
+      <div class="main-header background-top">
+        <div class="logo">
+          <img src="http://placehold.it/150x100" alt="logo" width="70" height="40">
+        </div>
+        <div class="menu">
+          <ul class="menu__list hidden">
+            <li class="menu__item"><a href="index.html" class="menu__drop-down">Главная</a></li>
+            <li class="menu__item"><a href="photo.html" class="menu__drop-down">Фотографии</a></li>
+            <li class="menu__item"><a href="#" class="menu__drop-down">Конкурс</a></li>
+            <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
+          </ul>
+          <button type="button" name="button"></button>
+        </div>
+        <div class="main-header__caption">
+          <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
       </div>
     </header>
     <main>
       <div class="competition">
-        <div class="competition background-top">
-          <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
-        </div>
         <div class="competition__about-me">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <label for="surname">Фамилия:</label>
+              <label for="surname" class="form__info">Фамилия:</label>
               <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
-              <label for="name">Имя:</label>
+              <label for="name" class="form__info">Имя:</label>
               <input type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
-              <label for="patronymic">Отчество:</label>
+              <label for="patronymic" class="form__info">Отчество:</label>
               <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
             </fieldset>
             <fieldset class="form form--background">
@@ -53,9 +55,9 @@
               <label for="checkbox-6">Разгромил отель</label>
             </fieldset>
             <fieldset>
-              <label for="tel">Номер телефона</label>
+              <label for="tel" class="form__info">Номер телефона</label>
               <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-              <label for="email">адрес почты</label>
+              <label for="email" class="form__info">адрес почты</label>
               <input type="email" name="email" id="email" placeholder="Введите почту *" required>
             </fieldset>
             <fieldset class="form form--background">
