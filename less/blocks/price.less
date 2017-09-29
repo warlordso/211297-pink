@@ -1,0 +1,83 @@
+.price{
+  outline: 1px solid black;
+  background: #f2f2f2;
+  max-width: 320px;
+}
+
+.price__list{
+  font-size: 0;
+  list-style: none;
+}
+
+.price__item{
+  display: inline-block;
+}
+
+.price__table{
+  border-collapse: collapse;
+}
+
+.price__line:first-child{
+  border: none;
+  border-left:1px solid #ffffff;
+  background: #283645;
+}
+
+.price__line--background:first-child{
+  background: #283645 url("../img/bg-hit.svg") no-repeat;
+
+}
+
+.price__line{
+  background: #ffffff;
+  border:1px solid #e5e5e5;
+
+}
+
+.price__cell{
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: left;
+  padding: 15px 125px 15px 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.price__line th{
+  padding: 0;
+  text-align: center;
+}
+
+.price__cell span{
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.price__rate{
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.price__cell p{
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin: 0;
+  padding-bottom: 15px;
+}
