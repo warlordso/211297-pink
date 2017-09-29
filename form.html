@@ -39,44 +39,48 @@
               <label for="patronymic" class="form__info">Отчество:</label>
               <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
             </fieldset>
-            <fieldset class="form form--background">
-              <legend>Ваши безбашенные достижения в путешествии</legend>
-              <input type="checkbox" name="checkbox" id="checkbox-1" checked>
-              <label for="checkbox-1">Сделал селфи с акулой</label>
-              <input type="checkbox" name="checkbox" id="checkbox-2" checked>
-              <label for="checkbox-2">Обгорел на пляже</label>
-              <input type="checkbox" name="checkbox" id="checkbox-3">
-              <label for="checkbox-3">Видел Чака Норриса</label>
-              <input type="checkbox" name="checkbox" id="checkbox-4">
-              <label for="checkbox-4">Накупил сувениров</label>
-              <input type="checkbox" name="checkbox" id="checkbox-5" checked>
-              <label for="checkbox-5">Удержал башню</label>
-              <input type="checkbox" name="checkbox" id="checkbox-6">
-              <label for="checkbox-6">Разгромил отель</label>
-            </fieldset>
+            <div class="form--background form--checkbox">
+              <fieldset>
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <input type="checkbox" name="checkbox" id="checkbox-1" checked>
+                <label for="checkbox-1">Сделал селфи с акулой</label>
+                <input type="checkbox" name="checkbox" id="checkbox-2" checked>
+                <label for="checkbox-2">Обгорел на пляже</label>
+                <input type="checkbox" name="checkbox" id="checkbox-3">
+                <label for="checkbox-3">Видел Чака Норриса</label>
+                <input type="checkbox" name="checkbox" id="checkbox-4">
+                <label for="checkbox-4">Накупил сувениров</label>
+                <input type="checkbox" name="checkbox" id="checkbox-5" checked>
+                <label for="checkbox-5">Удержал башню</label>
+                <input type="checkbox" name="checkbox" id="checkbox-6">
+                <label for="checkbox-6">Разгромил отель</label>
+              </fieldset>
+            </div>
             <fieldset>
               <label for="tel" class="form__info">Номер телефона</label>
               <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
               <label for="email" class="form__info">адрес почты</label>
               <input type="email" name="email" id="email" placeholder="Введите почту *" required>
             </fieldset>
-            <fieldset class="form form--background">
-              <legend>С каким приложением путешествовали?</legend>
-              <input type="radio" name="radio" id="radio-1" checked>
-              <label for="radio-1">Pink для iOS</label>
-              <input type="radio" name="radio" id="radio-2">
-              <label for="radio-2">Pink на Android</label>
-              <input type="radio" name="radio" id="radio-3">
-              <label for="radio-3">Windows Phone</label>
-            </fieldset>
+            <div class="form--background form--radio">
+              <fieldset>
+                <legend>С каким приложением путешествовали?</legend>
+                <input type="radio" name="radio" id="radio-1" checked>
+                <label for="radio-1">Pink для iOS</label>
+                <input type="radio" name="radio" id="radio-2">
+                <label for="radio-2">Pink на Android</label>
+                <input type="radio" name="radio" id="radio-3">
+                <label for="radio-3">Windows Phone</label>
+              </fieldset>
+            </div>
             <fieldset>
               <legend>Опишите свои эмоции</legend>
               <textarea name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <input type="submit" name="submit" value="Отправить форму">
             </fieldset>
           </form>
-          <p><span>*</span>— обязательные поля</p>
         </div>
+        <p class="competition__hint"><span>* </span>— обязательные поля</p>
       </div>
     </main>
     <footer class="footer">
