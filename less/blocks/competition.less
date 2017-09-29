@@ -1,0 +1,175 @@
+.competition{
+  max-width: 320px;
+  outline: 1px solid black;
+  background: #ffffff;
+  position: relative;
+  margin-top: -235px;
+  min-width: 320px;
+}
+
+.background-top{
+    &::after{
+      display: none;
+    }
+}
+
+.competition__about-me{
+  background: #ffffff;
+  margin: 0 auto;
+
+}
+
+.competition__about-me p{
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  padding: 50px 20px 0 20px;
+}
+
+.competition fieldset{
+  border:none;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 280px;
+}
+
+.form label{
+  display: block;
+}
+
+.form input{
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding: 10px 20px;
+}
+
+.form__info{
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  padding: 20px 0 10px 20px;
+}
+
+.form legend{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.form--background{
+  background: #f2f2f2;
+  min-width: 320px;
+  margin: 0;
+}
+
+.form--checkbox label{
+  margin: 35px 0 35px 0;
+  padding-left: 70px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+    &::before{
+      content: "";
+      width: 35px;
+      height: 35px;
+      border: 1px solid #e5e5e5;
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+}
+
+.form--background input{
+ display: none;
+
+}
+
+.form fieldset input[type="checkbox"]:checked + label::before{
+  width: 35px;
+  height: 35px;
+  background: #ffffff url("../img/icon-yes.svg") no-repeat center;
+  fill: #d22856;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.form--radio label{
+  margin: 35px 0 55px 0;
+  padding-left: 70px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+    &::before{
+      content: "";
+      width: 35px;
+      height: 35px;
+      border: 1px solid #e5e5e5;
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      top: -5px;
+      border-radius: 50%;
+    }
+}
+
+.form fieldset input[type="radio"]:checked + label::before{
+  width: 35px;
+  height: 35px;
+  background: #ffffff url("../img/icon-map-marker.svg") no-repeat center;
+  fill: #d22856;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.competition textarea{
+  max-width: 240px;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  margin-bottom: 48px;
+}
+
+.competition input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  text-align: center;
+  background: #2aab6d;
+  border-radius: 4%;
+  cursor: pointer;
+}
+
+.competition__hint{
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.competition__hint span{
+  color: #d8456d;
+}
