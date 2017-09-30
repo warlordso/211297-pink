@@ -1,0 +1,264 @@
+.main{
+  max-width: 320px;
+  outline: 1px solid black;
+  background: #ffffff;
+  position: relative;
+  margin-top: -235px;
+  min-width: 320px;
+}
+
+.main__caption{
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  padding: 50px 35px 50px 35px;
+}
+
+.main-wrapper{
+  max-width: 320px;
+  width: 320px;
+  background: #ffffff;
+}
+
+.main__comments{
+  padding: 0;
+}
+
+.main__content{
+  max-width: 280px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  padding-top: 20px;
+}
+
+.main__comment-block{
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+.main__comment p,
+.main__time,
+.main__name{
+  font-size: 16px;
+  line-height: 24px;
+  color: #283645;
+  margin:0;
+}
+
+.main__user,
+.main__comment{
+  max-width: 280px;
+  margin: 0 0 0 20px;
+}
+
+.main__name{
+  font-weight: bold;
+}
+
+.main__time{
+  font-weight: lighter;
+}
+
+.main__comment p{
+  margin:10px 0 15px 0;
+  font-size: 14px;
+}
+
+.main__like input{
+  display: block;
+  padding-left: 50px;
+  color: #da5b7d;
+  border: none;
+  background: inherit;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main__like{
+  position: relative;
+  padding-bottom: 25px;
+    &::before{
+      content: "";
+      display:block;
+      width: 20px;
+      height: 18px;
+      background: url("../img/icon-heart.svg") no-repeat center;
+      position: absolute;
+      top:5px;
+      left:0;
+      cursor: pointer;
+    }
+}
+
+.main__comment--panorama{
+  position: relative;
+  max-width: 320px;
+  padding-bottom: 0;
+}
+
+.main__user{
+  margin:0 20px;
+  width: 280px;
+}
+
+.main__photo img{
+  display: block;
+  margin: 0 auto;
+}
+
+.main--panorama{
+  display: inline-block;
+  background: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.main__upload{
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.main__upload fieldset{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.upload__caption p{
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0;
+  color: #283645;
+}
+
+.main__upload form{
+  margin-top:40px;
+  background: #f2f2f2;
+  padding-top:20px;
+}
+
+.upload__photo{
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.upload__radio{
+  max-width: 280px;
+  width: 100%;
+  display: block;
+  margin: 0 40px 0 30px;
+  position: relative;
+  height: 100px;
+}
+
+.upload__radio input{
+  visibility: hidden;
+    &::before{
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: url("../img/icon-editor-fill.svg") no-repeat center;
+      top: 20px;
+      left: 100px;
+      visibility:visible;
+    }
+}
+
+.upload__radio input:first-child::before{
+  background: url("../img/icon-editor-crop.svg") no-repeat center;
+  left: 0;
+}
+
+.upload__radio input:last-child::before{
+  background: url("../img/icon-editor-contrast.svg") no-repeat center;
+  left: 190px;
+}
+
+.upload__range{
+  display: block;
+  max-width: 260px;
+  width: 100%;
+  height: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.upload__range input{
+  visibility: hidden;
+  width: 260px;
+    &::before{
+      content: "";
+      display: block;
+      width: 260px;
+      height: 20px;
+      visibility: visible;
+      border-top: 2px solid #000000;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: #ffffff;
+      border: 2px solid #000000;
+      border-radius: 50%;
+      visibility: visible;
+      position: absolute;
+      top: -5px;
+      right: 30px;
+    }
+}
+
+.upload__button{
+  display: block;
+  border-top: 1px solid #dddfe0;
+  max-width: 320px;
+  width: 100%;
+}
+
+.upload__button input {
+  display: block;
+  border: 3px solid #d22856;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 40px;
+  margin: 0 auto;
+  width: 280px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #d22856;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.upload__button input:first-child{
+  margin-top: 30px;
+}
+
+.upload__button > .button__disabled{
+  color: #dddfe0;
+  border-color: #dddfe0;
+  margin-bottom: 40px;
+  cursor: auto;
+}
