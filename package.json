@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
   }
 }
