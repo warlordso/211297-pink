@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
 }
 
 
@@ -15,6 +16,11 @@ body {
   color: white;
   outline: 1px solid #000000;
   max-width: 320px;
+  margin: 0 auto;
+  max-height: 462px;
+  margin-bottom: -66px;
+  z-index: 10;
+  position: relative;
 }
 
 .logo {
@@ -35,12 +41,14 @@ body {
 
 .menu__item {
   background: #283645;
-  display: block;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   min-width: 320px;
   text-align: center;
   border-bottom: 1px solid #485461;
   box-shadow: 0 0 1px #000000;
+  padding: 15px 0;
 }
 
 .menu__drop-down {
@@ -87,8 +95,7 @@ body {
 }
 
 .background-top {
-  background: url('../img/bg-back-mobile@1x.jpg') center no-repeat;
-  height: 462px;
+  background: url('../img/bg-back-mobile@1x.jpg') 50% 0% no-repeat;
   position: relative;
   min-width: 320px;
     &::after {
@@ -103,10 +110,13 @@ body {
     }
 }
 
+.background-top--size{
+  min-height: 460px;
+}
+
 /*main-header__intro*/
 
 .main-header__intro {
-  background: #1d2631;
   min-height: 273px;
 }
 
@@ -155,12 +165,18 @@ body {
   opacity: 0.7;
 }
 
+.main-header__caption {
+z-index: 1;
+position: relative;
+min-height: 237px;
+}
+
 .main-header__caption h2 {
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 30px 45px 0 45px;
+  padding: 96px 45px 86px 45px;
   font-weight: lighter;
 }
