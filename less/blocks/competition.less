@@ -78,7 +78,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    }
+  }
 }
 
 .form--background {
@@ -108,17 +108,18 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-    &::before {
-      content: "";
-      width: 35px;
-      height: 35px;
-      border: 1px solid #e5e5e5;
-      background: #ffffff;
-      position: absolute;
-      left: 0;
-      top: -5px;
-      border-radius: 50%;
-    }
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    border-radius: 50%;
+  }
 }
 
 .form fieldset input[type="radio"]:checked + label::before {
