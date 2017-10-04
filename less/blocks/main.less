@@ -44,7 +44,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #283645;
-  margin:0;
+  margin: 0;
 }
 
 .main__user,
@@ -62,7 +62,7 @@
 }
 
 .main__comment p {
-  margin:10px 0 15px 0;
+  margin: 10px 0 15px 0;
   font-size: 14px;
 }
 
@@ -81,17 +81,18 @@
 .main__like {
   position: relative;
   padding-bottom: 25px;
-    &::before {
-      content: "";
-      display:block;
-      width: 20px;
-      height: 18px;
-      background: url("../img/icon-heart.svg") no-repeat center;
-      position: absolute;
-      top:5px;
-      left:0;
-      cursor: pointer;
-    }
+
+  &::before {
+    content: "";
+    display:block;
+    width: 20px;
+    height: 18px;
+    background: url("../img/icon-heart.svg") no-repeat center;
+    position: absolute;
+    top:5px;
+    left:0;
+    cursor: pointer;
+  }
 }
 
 .main__comment--panorama {
@@ -101,7 +102,7 @@
 }
 
 .main__user {
-  margin:0 20px;
+  margin: 0 20px;
   width: 280px;
 }
 
@@ -142,13 +143,12 @@
   text-align: center;
   padding: 0 10px;
   margin: 0;
-  color: #283645;
 }
 
 .main__upload form {
   margin-top:40px;
   background: #f2f2f2;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .upload__photo {
@@ -167,17 +167,18 @@
 
 .upload__radio input {
   visibility: hidden;
-    &::before {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      background: url("../img/icon-editor-fill.svg") no-repeat center;
-      top: 20px;
-      left: 100px;
-      visibility:visible;
-    }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url("../img/icon-editor-fill.svg") no-repeat center;
+    top: 20px;
+    left: 100px;
+    visibility: visible;
+  }
 }
 
 .upload__radio input:first-child::before {
@@ -207,7 +208,7 @@
   position: relative;
 }
 
-.upload__range--line span{
+.upload__range--line span {
   position: absolute;
   display: block;
   width: 12px;
@@ -222,26 +223,27 @@
 .upload__range input {
   visibility: hidden;
   width: 260px;
-    &::before {
-      content: "";
-      display: block;
-      width: 260px;
-      height: 20px;
-      visibility: visible;
-      border-top: 2px solid #d22856;
-    }
 
-    &::after {
-      content: "";
-      display: block;
-      width: 15px;
-      height: 15px;
-      background: #ffffff;
-      border: 2px solid #000000;
-      border-radius: 50%;
-      visibility: visible;
-      position: absolute;
-      top: -5px;
-      right: 30px;
-    }
+  &::before {
+    content: "";
+    display: block;
+    width: 260px;
+    height: 20px;
+    visibility: visible;
+    border-top: 2px solid #d22856;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    visibility: visible;
+    position: absolute;
+    top: -5px;
+    right: 30px;
+  }
 }
