@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="main-header background-top">
+    <header>
+      <div class="main-header">
         <div class="logo">
           <img src="http://placehold.it/150x100" width="70" height="40" alt="logo">
         </div>
@@ -19,15 +19,17 @@
             <li class="menu__item"><a href="form.html " class="menu__drop-down">Конкурс</a></li>
             <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
           </ul>
-          <button type="button" name="button"></button>
         </div>
-        <div class="main-header__caption">
-          <h2>Фотографии пользователей</h2>
+        <div class="menu__button">
+          <button type="button" name="button"></button>
         </div>
       </div>
     </header>
     <main>
       <div class="main main-wrapper">
+        <div class="main-header__caption background-top">
+          <h2>Фотографии пользователей</h2>
+        </div>
             <p class="main__caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="main__comments-wrapper">
           <ul class="main__comments">
@@ -169,9 +171,15 @@
                 <input type="radio" name="radio" id="shadow">
               </div>
               <div class="upload__range">
-                <input type="range" min="1" max="10" name="range">
-                <input type="range" min="1" max="10" name="range" class="hidden">
-                <input type="range" min="1" max="10" name="range" class="hidden">
+                <div class="upload__range upload__range--line">
+                  <span></span>
+                </div>
+                <div class="upload__range upload__range--line hidden">
+                  <span></span>
+                </div>
+                <div class="upload__range upload__range--line hidden">
+                  <span></span>
+                </div>
               </div>
               <div class="upload__button">
                 <input type="button" name="post" value="Запостить">
