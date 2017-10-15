@@ -13,7 +13,7 @@
           <img src="http://placehold.it/150x100" width="70" height="40" alt="logo">
         </div>
         <div class="menu">
-          <ul class="menu__list hidden">
+          <ul class="menu__list">
             <li class="menu__item"><a href="index.html" class="menu__drop-down">Главная</a></li>
             <li class="menu__item"><a href="#" class="menu__drop-down">Фотографии</a></li>
             <li class="menu__item"><a href="form.html " class="menu__drop-down">Конкурс</a></li>
@@ -162,28 +162,30 @@
           </div>
           <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
             <fieldset>
-              <div class="upload__photo">
-                <img src="img/photo-road-mobile@1x.jpg" alt="">
-              </div>
-              <div class="upload__radio">
-                <input type="radio" name="radio" id="definition" checked>
-                <input type="radio" name="radio" id="palette">
-                <input type="radio" name="radio" id="shadow">
-              </div>
-              <div class="upload__range">
-                <div class="upload__range upload__range--line">
-                  <span></span>
+              <div class="fieldset-wrapper">
+                  <div class="upload__photo">
+                    <img src="img/photo-road-mobile@1x.jpg" alt="">
+                  </div>
+                <div class="upload__button">
+                  <div class="upload__radio">
+                    <input type="radio" name="radio" id="definition" checked>
+                    <input type="radio" name="radio" id="palette">
+                    <input type="radio" name="radio" id="shadow">
+                  </div>
+                    <div class="upload__range upload__range--line">
+                      <span></span>
+                    </div>
+                    <div class="upload__range upload__range--line hidden">
+                      <span></span>
+                    </div>
+                    <div class="upload__range upload__range--line hidden">
+                      <span></span>
+                    </div>
+                  <div class="upload__btn">
+                    <input type="button" name="post" value="Запостить" class="button__active">
+                    <input type="button" name="cansel" value="Отмена" class="button__disabled" disabled >
+                  </div>
                 </div>
-                <div class="upload__range upload__range--line hidden">
-                  <span></span>
-                </div>
-                <div class="upload__range upload__range--line hidden">
-                  <span></span>
-                </div>
-              </div>
-              <div class="upload__button">
-                <input type="button" name="post" value="Запостить">
-                <input type="button" name="cansel" value="Отмена" class="button__disabled" disabled >
               </div>
             </fieldset>
           </form>

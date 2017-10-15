@@ -8,7 +8,7 @@
 .footer__logo,
 .footer__social-btn,
 .footer__html-acadymy {
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -75,4 +75,67 @@
   position: absolute;
   right: 60px;
   top: -10px;
+}
+
+.footer__block {
+  display: none;
+}
+
+@media (min-width: 660px ) {
+
+  .footer {
+    width: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px 0;
+  }
+
+  .footer__logo,
+  .footer__social-btn,
+  .footer__html-acadymy {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__html-acadymy,
+  .footer__logo {
+    width: 150px;
+  }
+
+  .footer__html-acadymy a {
+    right: 0;
+  }
+
+  .footer__logo a {
+    margin: 0;
+  }
+
+  .footer__html-acadymy p {
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px ) {
+
+  .footer__block,
+  .footer {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 0;
+  }
+
+  .footer__logo,
+  .footer__html-acadymy {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .footer__html-acadymy a {
+    right: 0;
+  }
 }
