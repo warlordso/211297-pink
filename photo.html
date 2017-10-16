@@ -28,7 +28,7 @@
     <main>
       <div class="main main-wrapper">
         <div class="main-header__caption background-top">
-          <h2>Фотографии пользователей</h2>
+          <h2 class="main-header__logo main-header__logo--photo">Фотографии пользователей</h2>
         </div>
             <p class="main__caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="main__comments-wrapper">
@@ -167,20 +167,26 @@
                     <img src="img/photo-road-mobile@1x.jpg" alt="">
                   </div>
                 <div class="upload__button">
-                  <div class="upload__radio">
-                    <input type="radio" name="radio" id="definition" checked>
-                    <input type="radio" name="radio" id="palette">
-                    <input type="radio" name="radio" id="shadow">
+                  <div class="upload__wrapper">
+                    <div class="upload__radio upload__radio--definition ">
+                      <input type="radio" name="radio" id="definition" checked>
+                      <div class="upload__range upload__range--line">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="upload__radio upload__radio--palette">
+                      <input type="radio" name="radio" id="palette">
+                      <div class="upload__range upload__range--line hidden">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="upload__radio upload__radio--shadow">
+                      <input type="radio" name="radio" id="shadow">
+                      <div class="upload__range upload__range--line hidden">
+                        <span></span>
+                      </div>
+                    </div>
                   </div>
-                    <div class="upload__range upload__range--line">
-                      <span></span>
-                    </div>
-                    <div class="upload__range upload__range--line hidden">
-                      <span></span>
-                    </div>
-                    <div class="upload__range upload__range--line hidden">
-                      <span></span>
-                    </div>
                   <div class="upload__btn">
                     <input type="button" name="post" value="Запостить" class="button__active">
                     <input type="button" name="cansel" value="Отмена" class="button__disabled" disabled >

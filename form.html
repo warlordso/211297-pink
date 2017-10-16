@@ -28,7 +28,7 @@
     <main>
       <div class="competition">
         <div class="main-header__caption background-top">
-          <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2 class="main-header__logo main-header__logo--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
         <div class="competition__about-me">
           <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__write">Пожалуйста, заполните форму ниже:</span></p>
@@ -49,33 +49,34 @@
             </fieldset>
               <fieldset class="competition__attainment">
                 <legend class="competition__background">Ваши безбашенные достижения в путешествии</legend>
-                <input type="checkbox" name="checkbox" id="checkbox-1" checked>
-                <label for="checkbox-1">Сделал селфи с акулой</label>
-                <input type="checkbox" name="checkbox" id="checkbox-2" checked>
-                <label for="checkbox-2">Обгорел на пляже</label>
-                <input type="checkbox" name="checkbox" id="checkbox-3">
-                <label for="checkbox-3">Видел Чака Норриса</label>
-                <input type="checkbox" name="checkbox" id="checkbox-4">
-                <label for="checkbox-4">Накупил сувениров</label>
-                <input type="checkbox" name="checkbox" id="checkbox-5" checked>
-                <label for="checkbox-5">Удержал башню</label>
-                <input type="checkbox" name="checkbox" id="checkbox-6">
-                <label for="checkbox-6">Разгромил отель</label>
+                <div class="competition__tel-email--wrapper">
+                  <input type="checkbox" name="checkbox" id="checkbox-1" checked>
+                  <label for="checkbox-1">Сделал селфи с акулой</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-2" checked>
+                  <label for="checkbox-2">Обгорел на пляже</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-3">
+                  <label for="checkbox-3">Видел Чака Норриса</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-4">
+                  <label for="checkbox-4">Накупил сувениров</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-5" checked>
+                  <label for="checkbox-5">Удержал башню</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-6">
+                  <label for="checkbox-6">Разгромил отель</label>
+                </div>
               </fieldset>
-            <fieldset class="competition__tel-email">
-              <legend class="competition__background hidden">Контактная информация</legend>
-              <div class="competition__block">
-
-              </div>
-              <div class="competition__tel">
-                <label for="tel" class="form__info">Номер телефона</label>
-                <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="competition__email">
-                <label for="email" class="form__info">адрес почты</label>
-                <input type="email" name="email" id="email" placeholder="Введите почту *" required>
-              </div>
-            </fieldset>
+              <fieldset class="competition__tel-email">
+                <legend class="competition__background hidden">Контактная информация</legend>
+                <div class="competition__tel-email--wrapper">
+                  <div class="competition__tel">
+                    <label for="tel" class="form__info">Номер телефона</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                  </div>
+                  <div class="competition__email">
+                    <label for="email" class="form__info">адрес почты</label>
+                    <input type="email" name="email" id="email" placeholder="Введите почту *" required>
+                  </div>
+                </div>
+                </fieldset>
               <fieldset class="competition__app">
                 <legend class="competition__background">С каким приложением путешествовали?</legend>
                 <input type="radio" name="radio" id="radio-1" checked>
