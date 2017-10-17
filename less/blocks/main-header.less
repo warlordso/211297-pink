@@ -78,28 +78,51 @@ body {
   background: inherit;
   border: none;
   cursor: pointer;
+}
 
-  &::after {
-    content: "";
-    width: 50px;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #ffffff;
-    box-shadow: 0 10px 0 #ffffff;
-  }
+.menu__button--opened button::before,
+.menu__button--opened button::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  background: #ffffff;
+}
 
-  &::before {
-    content: "";
-    width: 50px;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #ffffff;
-    box-shadow: 0 20px 0 #ffffff;
-  }
+.menu__button--opened button {
+  height: 50px;
+}
+
+.menu__button--opened button::before {
+  transform: rotate(-45deg);
+}
+
+.menu__button--opened button::after {
+  transform: rotate(45deg);
+}
+
+.menu__button--closed button::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 20px 0 #ffffff;
+}
+
+.menu__button--closed button::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 10px 0 #ffffff;
 }
 
 /*main-header__intro*/
