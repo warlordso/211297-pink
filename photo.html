@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -13,14 +14,14 @@
           <img src="http://placehold.it/150x100" width="70" height="40" alt="logo">
         </div>
         <div class="menu">
-          <ul class="menu__list hidden">
+          <ul class="menu__list">
             <li class="menu__item"><a href="index.html" class="menu__drop-down">Главная</a></li>
             <li class="menu__item"><a href="#" class="menu__drop-down">Фотографии</a></li>
             <li class="menu__item"><a href="form.html " class="menu__drop-down">Конкурс</a></li>
             <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
           </ul>
         </div>
-        <div class="menu__button">
+        <div class="menu__button menu__button--opened">
           <button type="button" name="button"></button>
         </div>
       </div>
@@ -28,7 +29,7 @@
     <main>
       <div class="main main-wrapper">
         <div class="main-header__caption background-top">
-          <h2>Фотографии пользователей</h2>
+          <h2 class="main-header__logo main-header__logo--photo">Фотографии пользователей</h2>
         </div>
             <p class="main__caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="main__comments-wrapper">
@@ -162,28 +163,36 @@
           </div>
           <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
             <fieldset>
-              <div class="upload__photo">
-                <img src="img/photo-road-mobile@1x.jpg" alt="">
-              </div>
-              <div class="upload__radio">
-                <input type="radio" name="radio" id="definition" checked>
-                <input type="radio" name="radio" id="palette">
-                <input type="radio" name="radio" id="shadow">
-              </div>
-              <div class="upload__range">
-                <div class="upload__range upload__range--line">
-                  <span></span>
+              <div class="fieldset-wrapper">
+                  <div class="upload__photo">
+                    <img src="img/photo-road-mobile@1x.jpg" alt="">
+                  </div>
+                <div class="upload__button">
+                  <div class="upload__wrapper">
+                    <div class="upload__radio upload__radio--definition ">
+                      <input type="radio" name="radio" id="definition" checked>
+                      <div class="upload__range upload__range--line">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="upload__radio upload__radio--palette">
+                      <input type="radio" name="radio" id="palette">
+                      <div class="upload__range upload__range--line hidden">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="upload__radio upload__radio--shadow">
+                      <input type="radio" name="radio" id="shadow">
+                      <div class="upload__range upload__range--line hidden">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="upload__btn">
+                    <input type="button" name="post" value="Запостить" class="button__active">
+                    <input type="button" name="cansel" value="Отмена" class="button__disabled" disabled >
+                  </div>
                 </div>
-                <div class="upload__range upload__range--line hidden">
-                  <span></span>
-                </div>
-                <div class="upload__range upload__range--line hidden">
-                  <span></span>
-                </div>
-              </div>
-              <div class="upload__button">
-                <input type="button" name="post" value="Запостить">
-                <input type="button" name="cansel" value="Отмена" class="button__disabled" disabled >
               </div>
             </fieldset>
           </form>

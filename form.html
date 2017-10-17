@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -9,64 +10,76 @@
   <body>
     <header>
       <div class="main-header">
-        <div class="logo">
-          <img src="http://placehold.it/150x100" alt="logo" width="70" height="40">
+          <div class="logo">
+            <img src="http://placehold.it/150x100" alt="logo" width="70" height="40">
+          </div>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="index.html" class="menu__drop-down">Главная</a></li>
+              <li class="menu__item"><a href="photo.html" class="menu__drop-down">Фотографии</a></li>
+              <li class="menu__item"><a href="#" class="menu__drop-down">Конкурс</a></li>
+              <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
+            </ul>
+          </div>
+          <div class="menu__button menu__button--opened">
+            <button type="button" name="button"></button>
+          </div>
         </div>
-        <div class="menu">
-          <ul class="menu__list hidden">
-            <li class="menu__item"><a href="index.html" class="menu__drop-down">Главная</a></li>
-            <li class="menu__item"><a href="photo.html" class="menu__drop-down">Фотографии</a></li>
-            <li class="menu__item"><a href="#" class="menu__drop-down">Конкурс</a></li>
-            <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
-          </ul>
-        </div>
-        <div class="menu__button">
-          <button type="button" name="button"></button>
-        </div>
-      </div>
     </header>
     <main>
       <div class="competition">
         <div class="main-header__caption background-top">
-          <h2>Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2 class="main-header__logo main-header__logo--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
         <div class="competition__about-me">
-          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__write">Пожалуйста, заполните форму ниже:</span></p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <label for="surname" class="form__info">Фамилия:</label>
-              <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
-              <label for="name" class="form__info">Имя:</label>
-              <input type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
-              <label for="patronymic" class="form__info">Отчество:</label>
-              <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
+            <fieldset class="competition__information">
+              <div class="competition__input">
+                <label for="surname" class="form__info">Фамилия:</label>
+                <input type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
+              </div>
+              <div class="competition__input">
+                <label for="name" class="form__info">Имя:</label>
+                <input type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
+              </div>
+              <div class="competition__input">
+                <label for="patronymic" class="form__info">Отчество:</label>
+                <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic">
+              </div>
             </fieldset>
-            <div class="form--background form--checkbox">
-              <fieldset>
-                <legend>Ваши безбашенные достижения в путешествии</legend>
-                <input type="checkbox" name="checkbox" id="checkbox-1" checked>
-                <label for="checkbox-1">Сделал селфи с акулой</label>
-                <input type="checkbox" name="checkbox" id="checkbox-2" checked>
-                <label for="checkbox-2">Обгорел на пляже</label>
-                <input type="checkbox" name="checkbox" id="checkbox-3">
-                <label for="checkbox-3">Видел Чака Норриса</label>
-                <input type="checkbox" name="checkbox" id="checkbox-4">
-                <label for="checkbox-4">Накупил сувениров</label>
-                <input type="checkbox" name="checkbox" id="checkbox-5" checked>
-                <label for="checkbox-5">Удержал башню</label>
-                <input type="checkbox" name="checkbox" id="checkbox-6">
-                <label for="checkbox-6">Разгромил отель</label>
+              <fieldset class="competition__attainment">
+                <legend class="competition__background">Ваши безбашенные достижения в путешествии</legend>
+                <div class="competition__tel-email--wrapper">
+                  <input type="checkbox" name="checkbox" id="checkbox-1" checked>
+                  <label for="checkbox-1">Сделал селфи с акулой</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-2" checked>
+                  <label for="checkbox-2">Обгорел на пляже</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-3">
+                  <label for="checkbox-3">Видел Чака Норриса</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-4">
+                  <label for="checkbox-4">Накупил сувениров</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-5" checked>
+                  <label for="checkbox-5">Удержал башню</label>
+                  <input type="checkbox" name="checkbox" id="checkbox-6">
+                  <label for="checkbox-6">Разгромил отель</label>
+                </div>
               </fieldset>
-            </div>
-            <fieldset>
-              <label for="tel" class="form__info">Номер телефона</label>
-              <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-              <label for="email" class="form__info">адрес почты</label>
-              <input type="email" name="email" id="email" placeholder="Введите почту *" required>
-            </fieldset>
-            <div class="form--background form--radio">
-              <fieldset>
-                <legend>С каким приложением путешествовали?</legend>
+              <fieldset class="competition__tel-email">
+                <legend class="competition__background hidden">Контактная информация</legend>
+                <div class="competition__tel-email--wrapper">
+                  <div class="competition__tel">
+                    <label for="tel" class="form__info">Номер телефона</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                  </div>
+                  <div class="competition__email">
+                    <label for="email" class="form__info">адрес почты</label>
+                    <input type="email" name="email" id="email" placeholder="Введите почту *" required>
+                  </div>
+                </div>
+                </fieldset>
+              <fieldset class="competition__app">
+                <legend class="competition__background">С каким приложением путешествовали?</legend>
                 <input type="radio" name="radio" id="radio-1" checked>
                 <label for="radio-1">Pink для iOS</label>
                 <input type="radio" name="radio" id="radio-2">
@@ -74,15 +87,16 @@
                 <input type="radio" name="radio" id="radio-3">
                 <label for="radio-3">Windows Phone</label>
               </fieldset>
-            </div>
-            <fieldset>
+            <fieldset class="competition__emotions">
               <legend>Опишите свои эмоции</legend>
               <textarea name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              <input type="submit" name="submit" value="Отправить форму">
             </fieldset>
+            <div class="competition__send-form">
+              <input type="submit" name="submit" value="Отправить форму">
+              <p class="competition__hint"><span>* </span>— обязательные поля</p>
+            </div>
           </form>
         </div>
-        <p class="competition__hint"><span>* </span>— обязательные поля</p>
       </div>
     </main>
     <footer class="footer">
