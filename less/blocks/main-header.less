@@ -16,7 +16,6 @@ body {
 
 .main-header {
   color: white;
-  outline: 1px solid #000000;
   width: 320px;
   margin: 0 auto;
   max-height: 462px;
@@ -28,8 +27,7 @@ body {
 .logo {
   width: 320px;
   height: 70px;
-  background: #1d2631;
-  opacity: 0.8;
+  background: #283645;
 }
 
 /*menu*/
@@ -47,8 +45,8 @@ body {
   width: 320px;
   text-align: center;
   border-bottom: 1px solid #485461;
-  box-shadow: 1px 0 0 #000000;
-  padding: 15px 0;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 1);
+  padding: 16px 0;
 }
 
 .menu__drop-down {
@@ -57,13 +55,14 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 32px;
+  font-weight: bold;
+  line-height: 31px;
 }
 
 .menu__button {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: -5px;
   width: 50px;
   height: 25px;
   background: inherit;
@@ -83,16 +82,17 @@ body {
 .menu__button--opened button::before,
 .menu__button--opened button::after {
   content: "";
-  width: 50px;
-  height: 4px;
+  width: 30px;
+  height: 5px;
   position: absolute;
-  bottom: 50%;
-  left: 0;
+  top: 10px;
+  right: 0;
   background: #ffffff;
 }
 
 .menu__button--opened button {
-  height: 50px;
+  height: 30px;
+  width: 30px;
 }
 
 .menu__button--opened button::before {
@@ -128,7 +128,7 @@ body {
 /*main-header__intro*/
 
 .main-header__intro {
-  min-height: 273px;
+  min-height: 269px;
 }
 
 .main-header__intro--download {
@@ -139,11 +139,12 @@ body {
   padding: 16px 37px;
   text-align: center;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 17px;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 28px;
   margin: 0 auto;
   text-decoration: none;
+  margin-top: 26px;
 }
 
 .main-header__intro a {
@@ -154,6 +155,8 @@ body {
   background: url("../img/logo-apple.svg") no-repeat center;
   width: 55px;
   height: 65px;
+  margin-left: 38px;
+  margin-top: -6px;
 }
 
 .main-header__intro--android {
@@ -166,14 +169,17 @@ body {
   background: url("../img/logo-microsoft.svg") no-repeat center;
   width: 50px;
   height: 50px;
+  margin-right: 42px;
 }
 
 .main-header__intro p {
   text-align: center;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 25px;
   font-weight: 300;
   opacity: 0.7;
+  padding: 0 20px;
+  margin: 16px 0;
 }
 
 .main-header__logo {
@@ -187,7 +193,7 @@ body {
 
 .main-header__logo--photo,
 .main-header__logo--form {
-  padding: 96px 45px 86px 45px;
+  padding: 95px 45px 83px 45px;
 }
 
 @media (min-width: 660px) {
@@ -211,6 +217,18 @@ body {
 
   .menu__button {
     top: 40px;
+  }
+  .menu__button--opened button::before,
+  .menu__button--opened button::after {
+    top: 13px;
+  }
+
+  .main-header__intro--apple {
+    margin-left: 23px;
+  }
+
+  .main-header__intro--windows {
+    margin-right: 38px;
   }
 }
 
