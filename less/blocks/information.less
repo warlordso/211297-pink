@@ -1,6 +1,5 @@
 .information {
   background: #ffffff;
-  outline: 1px solid red;
   width: 320px;
   margin: 0 auto;
 }
@@ -14,15 +13,16 @@
 }
 
 .background-top--size {
-  min-height: 460px;
+  min-height: 461px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
 }
 
 .background-top__hand-iphone {
   width: 320px;
-  height: 290px;
+  height: 285px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
 }
 
@@ -44,31 +44,37 @@
   justify-content: space-around;
 }
 
-.main-header__intro--download {
-  margin-top: 30px;
-  margin-bottom: 25px;
-}
-
 .main-header__intro p {
   color: #ffffff;
 }
 
 .information__new {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 29px;
   text-align: center;
   color: #283645;
+  margin: 0;
+  margin-top: 41px;
+  font-weight: lighter;
+}
+
+.information__offer .information__new:last-child {
+  margin-top: 30px;
+  margin-bottom: 36px;
 }
 
 .information__about {
-  background: #f2f2f2;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat 100% 0;
   display: flex;
   flex-direction: column;
+  padding-top: 80px;
 }
 
 .information__screen {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .information__screen img {
@@ -90,10 +96,11 @@
 
 .information__caption {
   display: block;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 13px;
 }
 
 .information__explanation {
@@ -101,6 +108,12 @@
   line-height: 24px;
   color: #283645;
   text-align: center;
+  padding: 0 20px;
+  margin: 0 0 33px 0;
+}
+
+.information__item:last-child .information__explanation:last-child {
+  margin-bottom: 41px;
 }
 
 @media (min-width: 660px) {
@@ -113,21 +126,30 @@
   .information__top-menu {
     display: flex;
     flex-direction: row-reverse;
-    height: 620px;
+    height: 704px;
     background-size: cover;
+    justify-content: space-around;
   }
 
   .background-top {
     background: transparent;
   }
 
+  .background-top--size {
+    background: transparent;
+  }
+
+  .background-top__hand-iphone {
+    background: transparent;
+  }
+
   .main-header__intro {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     width: 300px;
-    margin-left: 20px;
     background: transparent;
+    padding-top: 177px;
+    margin-left: 20px;
   }
 
   .main-header__headline {
@@ -136,9 +158,10 @@
     text-align: center;
     color: #ffffff;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     font-weight: lighter;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
+    padding: 0 30px 0 23px;
   }
 
   .main-header__links {
@@ -146,19 +169,25 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    min-height: 188px;
   }
 
   .main-header__intro--download {
     width: 100%;
     box-sizing: border-box;
     background: transparent;
-    margin-bottom: 10px;
+    margin-left: -4px;
   }
 
   .main-header__intro p {
     color: #ffffff;
     opacity: 1;
     margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    margin-top: 31px;
+    margin-left: -10px;
   }
 
   .information__about {
