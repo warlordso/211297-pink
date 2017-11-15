@@ -105,16 +105,41 @@
   .price {
     width: 660px;
     overflow: visible;
-    background: #f2f2f2;
+    margin-top: -20px;
+    background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat 100% 0;
+    padding-top: 70px;
   }
 
   .item__list:first-child {
     background: #ffffff;
   }
 
+  .price__line--background {
+    background: #283645 url("../img/bg-hit-tablet.svg") no-repeat;
+  }
+
   .price__list-wrapper {
     width: 620px;
     margin: 0 auto;
+  }
+
+  .price__item-background {
+    min-height: 79px;
+  }
+
+  .price__hit {
+    top: 9px;
+    left: 6px;
+  }
+
+  .price__rate {
+    font-size: 17px;
+    margin: 0;
+    padding-top: 7px;
+  }
+
+  .price__value {
+    font-size: 17px;
   }
 
   .price__item {
@@ -138,15 +163,12 @@
   .item__list li {
     text-transform: none;
     min-height: 45px;
+    padding-left: 13px;
   }
 
   .item__list li:first-child {
     text-transform: none;
     padding-right: 0;
-  }
-
-  .slider__control {
-    display: none;
   }
 }
 

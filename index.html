@@ -11,25 +11,29 @@
   <body>
     <header>
       <div class="main-header">
-        <div class="logo">
-          <img src="http://placehold.it/150x100" width="70" height="40" alt="logo">
+        <div class="main-header__wrapper">
+          <div class="logo">
+            <img src="http://placehold.it/150x100" width="70" height="40" alt="logo">
+          </div>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__drop-down">Главная</a></li>
+              <li class="menu__item"><a href="photo.html" class="menu__drop-down">Фотографии</a></li>
+              <li class="menu__item"><a href="form.html" class="menu__drop-down">Конкурс</a></li>
+              <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
+            </ul>
+          </div>
+          <div class="menu__button menu__button--opened">
+            <button type="button" name="button"></button>
+          </div>
         </div>
-        <div class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__drop-down">Главная</a></li>
-            <li class="menu__item"><a href="photo.html" class="menu__drop-down">Фотографии</a></li>
-            <li class="menu__item"><a href="form.html" class="menu__drop-down">Конкурс</a></li>
-            <li class="menu__item"><a href="https://htmlacademy.ru/" class="menu__drop-down">HTML Academy</a></li>
-          </ul>
         </div>
-        <div class="menu__button menu__button--opened">
-          <button type="button" name="button"></button>
-        </div>
-      </div>
     </header>
     <main>
       <div class="information">
         <div class="information__top-menu">
+          <div class="information__background">
+          </div>
           <div class="background-top--size">
             <div class="background-top__hand-iphone">
             </div>
@@ -45,39 +49,39 @@
             <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
-        <div class="information__offer">
-          <p class="information__new">Устали от серости мегаполиса?</p>
-          <p class="information__new">Нам есть, что вам предложить!</p>
-        </div>
-        <div class="information__about">
-          <ul class="information__list">
-            <li class="information__item">
-              <b class="information__caption">Поднимает настроение</b>
-              <p class="information__explanation">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="information__item">
-              <b class="information__caption">Меняет мир вокруг</b>
-              <p class="information__explanation">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="information__item">
-              <b class="information__caption">Заводит новых друзей</b>
-              <p class="information__explanation">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="information__screen">
-            <img src="img/iphone-screen-mobile@1x.png" alt="iphone">
-            <img src="img/iphone-screen-mobile@1x.png" alt="iphone">
-            <img src="img/iphone-screen-mobile@1x.png" alt="iphone">
+          <div class="information__offer">
+            <p class="information__new">Устали от серости мегаполиса?</p>
+            <p class="information__new">Нам есть, что вам предложить!</p>
           </div>
-        </div>
+          <div class="information__about">
+            <ul class="information__list">
+              <li class="information__item">
+                <b class="information__caption">Поднимает настроение</b>
+                <p class="information__explanation">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="information__item">
+                <b class="information__caption">Меняет мир вокруг</b>
+                <p class="information__explanation">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="information__item">
+                <b class="information__caption">Заводит новых друзей</b>
+                <p class="information__explanation">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <div class="information__screen">
+              <img src="img/iphone-screen-mobile@1x.png" alt="iphone">
+              <img src="img/iphone-screen-mobile@1x.png" alt="iphone">
+              <img src="img/iphone-screen-mobile@1x.png" alt="iphone">
+            </div>
+          </div>
       </div>
       <div class="effect">
         <div class="effect__background">
-          <img src="" alt="24 hours">
+          <p>24</p>
         </div>
         <div class="effect__stats">
-          <b>Эффект на 24 часа!</b>
-          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!!</p>
+          <b><span class="effect__stats--new-line">Эффект</span> на 24 часа!</b>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект <span class="effect__stats--new-line">от использования приложения длится целые сутки!</span></p>
           <a href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -157,7 +161,7 @@
             </li>
           </ul>
         </div>
-        <div class="slider__control">
+        <div class="slider__control slider__none">
           <input type="radio" name="price_slider" id="button-4">
           <label for="button-4"></label>
           <input type="radio" name="price_slider" id="button-5" checked>

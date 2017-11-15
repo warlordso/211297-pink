@@ -46,11 +46,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 100%;
+    background-size: 660px;
+    padding-bottom: 77px;
   }
 
   .contacts__write-us {
     font-size: 40px;
     line-height: 50px;
+    padding: 0 50px;
+    margin: 9px 0 41px 0;
   }
 
   .contacts__info {
@@ -58,6 +63,29 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .contacts__phone,
+  .contacts__write,
+  .contacts__come {
+    width: 310px;
+  }
+
+  .contacts__come {
+    margin-top: 26px;
+  }
+
+  .contacts__phone > .contacts__caption,
+  .contacts__phone > .contacts__information {
+    margin-left: -11px;
+  }
+
+  .contacts__write > .contacts__caption,
+  .contacts__write > .contacts__information {
+    margin-left: 11px;
+  }
+  .contacts__come > .contacts__information {
+    padding-top: 2px;
   }
 }
 

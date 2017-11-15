@@ -5,9 +5,11 @@
 @media (min-width: 660px) {
   .effect {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0 auto;
     width: 660px;
+    padding-left: 35px;
+    min-height: 400px;
   }
 
   .effect__background,
@@ -15,9 +17,49 @@
     width: 310px;
   }
 
+  .effect__background {
+    background:
+    url("../img/icon-editor-diagram-fill.svg") no-repeat 19% 59%,
+    url("../img/icon-timer.svg") no-repeat 19% 51%;
+    background-size: 66%;
+  }
+  .effect__background p {
+    margin-top: 133px;
+    margin-left: 70px;
+    color: #d22856;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+  }
+
+  .effect__stats p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 10px;
+    margin: 12px 0;
+
+  }
+
+  .effect__stats b {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    padding-right: 50px;
+    display: block;
+    margin-top: 97px;
+  }
+
   .effect__stats a {
     color: #d22856;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: -1px;
+    display: block;
+  }
+
+  .effect__stats--new-line {
+    display: block;
   }
 }
 
